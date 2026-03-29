@@ -40,8 +40,7 @@ document.getElementById('btnAgregar').addEventListener('click', () => {
 
     listaTareas.appendChild(li);
     totalTareas++;
-    // Console.log descriptivo #2
-    console.log("Nueva tarea inyectada en el DOM exitosamente.");
+    console.log("Tarea agregada: ");
     actualizarInterfaz();
     inputTarea.value = "";
 });
@@ -64,7 +63,7 @@ function hacerUrgente(boton) {
 }
 
 function eliminarTarea(boton) {
-    // Confirmación (10 pts)
+    console.log("Intentando eliminar tarea...");
     if (confirm("Do you want to delete this task?")) {
         const li = boton.closest('li');
         if (li.classList.contains('hecha')) {
