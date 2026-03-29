@@ -1,0 +1,133 @@
+
+/* 1. Configuración de Base y Centrado con Flexbox */
+body {
+    background: linear-gradient(135deg, #0f0e0e, #234a96);
+    font-family: 'Arial', sans-serif;
+    color: #120101;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: flex-start;
+}
+
+.container {
+    background-color: rgba(75, 69, 154, 0.351);
+    border-radius: 12px;
+    padding: 25px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 8px 24px rgba(53, 47, 47, 0.2);
+    margin-top: 20px;
+}
+
+
+.input-section { 
+    background-color: rgba(87, 60, 13, 0.351);
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    background-color: #71b1cc; 
+    padding: 10px;
+    border: 1px solid #2a233e;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="text"] { 
+    flex-grow: 1;
+}
+
+input::placeholder {
+    text-align: center;
+}
+/* 4. Botón Agregar */
+#btnAgregar {
+    background: linear-gradient(to right, #146363, #8e44ad);
+    color: rgb(1, 12, 9); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+#btnAgregar:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+
+#pendingTasks {
+    padding: 0;
+    margin-top: 20px;
+    list-style: none;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+li {
+    width: 100%;        
+    max-width: 500px;   
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    background-color: #8c4987;
+    margin-bottom: 12px;    
+    padding: 15px; 
+    border: 1px solid #65277b; 
+    border-left: 5px solid #ff416c; 
+    border-radius: 5px;
+}
+
+.hecha {
+    text-decoration: line-through;
+    opacity: 0.6;
+    background-color: #f0f0f0 !important;
+    border-left: 5px solid #999 !important;
+}
+
+.urgente {
+    border-left: 5px solid #8e44ad !important;
+    background-color: #f9f2ff;
+    font-weight: bold;
+}
+
+.frase-maka {
+    color: #010419; 
+    font-size: 0.85rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+#contadorVivo {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #171313;
+    text-align: center;
+}
+
+.btn-clear {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #71b1cc; 
+    border: 1px dashed #5a0505;
+    color: rgb(24, 11, 11);
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-clear:hover {
+    background-color: qwqw3#603573cb;
+}

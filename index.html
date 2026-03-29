@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo centrado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+    <h1>My Pending List</h1> 
+    <div class="subtitle">
+        <p style="font-style: normal; font-family: Arial, sans-serif;">
+  "Cositas Varias y a veces modo Chocolate-Sol"
+</p>
+
+    </div>
+
+    <section class="input-section">
+    <input type="text" id="inputTarea" placeholder="What's next?" style="color: rgb(217, 217, 15);">
+
+            
+    <select id="categoria">
+        <option value="💼">Work</option>
+        <option value="📚">Study</option>
+        <option value="🏠">Home</option>
+        <option value="🔖">Personal</option>
+    </select>
+
+    <button id="btnAgregar">Add Task</button>
+    </section>
+
+    <p id="mensajeError" style="display: none;"></p>
+
+    <div id="contadorVivo">
+     Done: <span class="num">0</span> of <span class="num">0</span>
+    </div>
+
+    <ul id="pendingTasks"></ul>
+
+    <button onclick="limpiarHechas()" class="btn-clear">Clear Completed</button>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
